@@ -1,0 +1,176 @@
+
+html{
+    margin:0;
+    padding:0;
+    background-color:#ffffff;
+}
+
+header{
+    background-color: rgb(36, 34, 34);
+    top: 0;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    left: 0;
+    color: white;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+
+body {
+font-family: 'PT Sans', Arial, Verdana;
+background-color: #eee;
+margin: 0;
+}
+
+h1 {
+text-align: center;
+font-size: 48px;
+text-transform: uppercase;
+letter-spacing: 3px;
+color: #222;
+}
+
+.menu {
+list-style: none;
+margin: 0;
+padding: 0;
+width: 100%;
+height: 80px;
+position: relative;
+background: rgb(31, 29, 29);
+z-index: 0;
+}
+
+.leftnav:hover{
+    background-color: dodgerblue;
+}
+.rightnav:hover{
+    background-color: dodgerblue;
+}
+.rightnav2:hover{
+    background-color: dodgerblue;
+}
+
+.colorb{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    z-index: 0;
+    text-align: center;}
+a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    z-index: 0;
+    text-align: center;
+}
+
+.rightnav{
+    border-left: 1px solid rgb(63, 63, 63);
+    float: right;
+    width:auto;
+    height: 100%;
+    margin: 0;
+    padding: 1.92%;
+    z-index: 0;
+}
+.rightnav2{
+    border-left: 1px solid rgb(63, 63, 63);
+    float: right;
+    width:auto;
+    height: 100%;
+    padding: 1.2%;
+    z-index: 0;
+
+}
+.leftnav{
+    border-left: 1px solid rgb(63, 63, 63);
+    float: left;
+    width:auto;
+    height: 100%;
+    margin: 0;
+    padding: 1.92%;  
+    z-index: 0;
+
+}
+
+/* #########################################################""" */
+
+
+.loupe {display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    z-index: 0;
+}
+
+
+/* #########################################################""" */
+
+.card {
+    height: auto;
+    top: 25%;
+    position:absolute;
+    width: 100%;
+    margin-top: auto;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    transition-property: transform;
+    margin-left: 0px;
+    left: 0;
+    z-index: -1;
+}
+.jules{
+    height: 260px;
+    width: 100%;
+    margin-top: 45%;
+    z-index: 0;
+}
+
+.flavio{
+    position: fixed;
+    margin-top: 0px;
+    height: 200px;
+    width: 100%;
+    z-index: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    margin: 0 300px 0 300px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(48, 46, 46);
+  }
