@@ -22,7 +22,9 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	// fmt.Println("Endpoint Hit: homePage")
 }
 func returnAllArticles(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endpoint Hit: returnAllArticles")
+	fmt.Fprintf(w, "Endpoint Hit: returnAllArticles")
+	fmt.Println("Endpoint Hit: uwuuuuuuuuuu")
+
 	json.NewEncoder(w).Encode(Articles)
 }
 func handleRequests() {

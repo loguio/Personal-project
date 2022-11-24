@@ -1,0 +1,236 @@
+.header {
+    background-color: #eec5c5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 900;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-content: center;
+    padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #272727;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+    color: #fddb3a;
+}
+
+.navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #fddb3a;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover~.dot {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover~.dot {
+    -webkit-transform: translateX(110px);
+    transform: translateX(110px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover~.dot {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover~.dot {
+    -webkit-transform: translateX(285px);
+    transform: translateX(285px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Carter+One);
+input[type='radio'] {
+    display: none;
+}
+
+input[type='radio']#section1:checked~nav label[for='section1'] {
+    background-color: white;
+}
+
+input[type='radio']#section1:checked~section:nth-of-type(1) {
+    z-index: 1;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+
+input[type='radio']#section1:checked~.cover {
+    background-color: #f8b195;
+}
+
+input[type='radio']#section2:checked~nav label[for='section2'] {
+    background-color: white;
+}
+
+input[type='radio']#section2:checked~section:nth-of-type(2) {
+    z-index: 1;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+
+input[type='radio']#section2:checked~.cover {
+    background-color: #c06c85;
+}
+
+input[type='radio']#section3:checked~nav label[for='section3'] {
+    background-color: white;
+}
+
+input[type='radio']#section3:checked~section:nth-of-type(3) {
+    z-index: 1;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+
+input[type='radio']#section3:checked~.cover {
+    background-color: #6c5c7c;
+}
+
+input[type='radio']#section4:checked~nav label[for='section4'] {
+    background-color: white;
+}
+
+input[type='radio']#section4:checked~section:nth-of-type(4) {
+    z-index: 1;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+    transition-delay: 0s;
+}
+
+input[type='radio']#section4:checked~.cover {
+    background-color: #345d7e;
+}
+
+.nav {
+    position: fixed;
+    z-index: 2;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav__item {
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin: 12px auto;
+    border: solid 2px white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav__item:hover {
+    background-color: white;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    transition-delay: 0.5s;
+}
+
+section:nth-of-type(1) {
+    background: #f8b195;
+}
+
+section:nth-of-type(2) {
+    background: #c06c85;
+}
+
+section:nth-of-type(3) {
+    background: #6c5c7c;
+}
+
+section:nth-of-type(4) {
+    background: #345d7e;
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    color: white;
+    font: 100% 'Carter One', cursive;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}

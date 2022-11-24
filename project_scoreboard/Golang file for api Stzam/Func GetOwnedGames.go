@@ -9,6 +9,7 @@ import (
 )
 
 func GetOwnedGames(steamid string) {
+	fmt.Println("GetOwned game")
 	var text apiCoutGames
 	var test api
 	var games []map[string]int

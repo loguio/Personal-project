@@ -1,0 +1,41 @@
+{{define "home"}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <title>Home</title>
+</head>
+<body>
+    <script src="/static/js/main.js"></script>
+    {{template "Header"}}
+    <div class="mid">
+        <div class="upgrade">
+            <h2>Upgrade</h2>
+            <ul>
+                <li>
+                    <h3>Baguette</h3>
+                    <p>+1</p>
+                    <h1 id="price">Price : 10</h1>
+                    <input type="button" value="Buy" onclick="buyBaguette()">
+                </li>
+                <li>
+                    <h3>Croissant</h3>
+                    <p>Auto Click +1</p>
+                    <h1 id="priceAutoClick">Price : 10</h1>
+                    <input type="button" value="Buy" onclick="autoClicker()">
+                </li>
+            </ul>
+        </div>  
+        <div class="goldClick">
+            <input type="image" src="/static/img/baguette.png" class="baguette" onclick="increment()" alt="Baguette">
+            <h1 id="counting" class="counter">💲 : 0</h1>
+        </div> 
+    </div>
+</body>
+
+</html>
+{{end}}
