@@ -1,9 +1,6 @@
 # Miscellaneous
 *.class
-<<<<<<< HEAD
 *.lock
-=======
->>>>>>> 98608cf1503fdfd74b13a2d6c3a3b6e30f103b83
 *.log
 *.pyc
 *.swp
@@ -12,10 +9,6 @@
 .buildlog/
 .history
 .svn/
-<<<<<<< HEAD
-=======
-migrate_working_dir/
->>>>>>> 98608cf1503fdfd74b13a2d6c3a3b6e30f103b83
 
 # IntelliJ related
 *.iml
@@ -23,7 +16,6 @@ migrate_working_dir/
 *.iws
 .idea/
 
-<<<<<<< HEAD
 # Visual Studio Code related
 .classpath
 .project
@@ -213,40 +205,3 @@ samples/ios/Continote/Continote/FCNContinue.m
 # Misc.
 .DS_Store
 *.swp
-=======
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache/
-.pub/
-/build/
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
-
-.vscode
-android
-ios
-lib
-linux
-macos 
-web
-windows
->>>>>>> 98608cf1503fdfd74b13a2d6c3a3b6e30f103b83
