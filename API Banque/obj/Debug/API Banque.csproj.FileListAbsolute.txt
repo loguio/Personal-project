@@ -1,0 +1,11 @@
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\bin\Debug\API Banque.exe.config
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\bin\Debug\API Banque.exe
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\bin\Debug\API Banque.pdb
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\obj\Debug\API Banque.csproj.AssemblyReference.cache
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\obj\Debug\API Banque.csproj.SuggestedBindingRedirects.cache
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\obj\Debug\API_Banque.Properties.Resources.resources
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\obj\Debug\API Banque.csproj.GenerateResource.cache
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\obj\Debug\API Banque.csproj.CoreCompileInputs.cache
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\obj\Debug\API Banque.exe
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\obj\Debug\API Banque.pdb
+C:\Users\MARIU\OneDrive\Documents\Personal-project\API Banque\obj\Debug\API_Banque.BAnkin2.resources

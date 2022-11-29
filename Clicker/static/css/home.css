@@ -1,0 +1,44 @@
+body {
+    padding: 0px;
+    margin: 0;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.baguette {
+    width: 40%;
+    padding-top: 0px;
+    margin-left: 120%;
+    margin-right: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.baguette:active {
+    transform: translateY(10px);
+    transition: 0.1s;
+}
+
+.counter {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 130%;
+    margin-right: 100%;
+}
+
+.upgrade {
+    width: 150px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.mid {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.goldClick {
+    display: block;
+}
