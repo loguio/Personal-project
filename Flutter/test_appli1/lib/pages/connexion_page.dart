@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_database/firebase_database.dart';
 import "package:test_appli1/auth.dart";
 import 'package:firebase_auth/firebase_auth.dart';
 
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-///
-///
 class ConnexionPage extends StatefulWidget {
   const ConnexionPage({Key? key}) : super(key: key);
 
@@ -20,8 +13,6 @@ class _ConnexionPage extends State<ConnexionPage> {
   // const ConnexionPage({super.key});
   final TextEditingController email = TextEditingController();
   final TextEditingController mdp = TextEditingController();
-  FirebaseDatabase database = FirebaseDatabase.instance;
-  DatabaseReference ref = FirebaseDatabase.instance.ref();
   bool isLogin = true;
   String? errorMessage = '';
 
@@ -90,10 +81,12 @@ class _ConnexionPage extends State<ConnexionPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Container(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
-                child: const FlutterLogo(
-                  size: 40,
+              Flexible(
+                child: Container(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
+                  child: const FlutterLogo(
+                    size: 40,
+                  ),
                 ),
               ),
               Container(
@@ -121,22 +114,6 @@ class _ConnexionPage extends State<ConnexionPage> {
                   controller: mdp,
                 ),
               ),
-              //BOUTON SUBMIT DE BASE
-              // Container(
-              //     height: 80,
-              //     padding: const EdgeInsets.all(20),
-              //     child: ElevatedButton(
-              //       style: ElevatedButton.styleFrom(
-              //         minimumSize: const Size.fromHeight(50),
-              //       ),
-              //       child: const Text('Log In'),
-              //       onPressed: () {
-              //         setState(() {
-              //           isLogin = !isLogin;
-              //         });
-              //         Navigator.pop(context);
-              //       },
-              //     )),
               _submitButton(),
               _loginOrRegisterButton(),
               TextButton(

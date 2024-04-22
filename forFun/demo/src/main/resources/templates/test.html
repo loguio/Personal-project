@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Démineur avec Spring et Thymeleaf</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 40px); /* Changer le nombre de colonnes selon les besoins */
+            grid-gap: 2px;
+        }
+        .cell {
+            width: 40px;
+            height: 40px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <!-- Utilisation de Thymeleaf pour itérer à travers la grille du démineur -->
+        <!-- Ici, nous générons une grille 10x10 pour cet exemple -->
+        <!-- Vous pouvez ajuster la taille et le nombre de cases selon vos besoins -->
+        <!-- Chaque div représente une case -->
+        <!-- Utilisez Thymeleaf pour afficher les données de votre modèle de jeu -->
+        <div th:each="row : ${grid}">
+            <div th:each="cell : ${row}" class="cell" th:text="${cell}">1</div>
+        </div>
+    </div>
+</body>
+</html>
